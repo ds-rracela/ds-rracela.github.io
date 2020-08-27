@@ -3,7 +3,7 @@ title: "MSDS - ML Indiv"
 date: 2019-08-15
 tags: [machine learning, adaboost, bankruptcy]
 header:
-  image: "/images/brankruptcy_adaboost/brankruptcy_adaboost.png"
+  image: "/images/bankruptcy_adaboost/bankruptcy_adaboost.png"
 excerpt: "Data Wrangling, Data Science, Messy Data"
 mathjax: "true"
 ---
@@ -133,10 +133,6 @@ from judas.automate import General
 
 gen = General()
 ```
-
-    C:\Users\Rad\Anaconda3\lib\site-packages\tqdm\autonotebook\__init__.py:14: TqdmExperimentalWarning: Using `tqdm.autonotebook.tqdm` in notebook mode. Use `tqdm.tqdm` instead to force console mode (e.g. in jupyter console)
-      " (e.g. in jupyter console)", TqdmExperimentalWarning)
-    
 
 ### Load Dataset
 
@@ -710,7 +706,7 @@ gen.pcc(df1['class'])
     
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_17_1.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_17_1.png)
 
 
 Check Distribution of each attribute / financial ratio
@@ -721,7 +717,7 @@ df1.hist(figsize=(15,15));
 ```
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_19_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_19_0.png)
 
 
 Check correlation between attributes.
@@ -734,7 +730,7 @@ ax.set_title('Correlation Heatmap');
 ```
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_21_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_21_0.png)
 
 
 Set threshold for the correlation. Any correlation greater than 0.9 will be candidate for deletion.
@@ -1348,7 +1344,7 @@ gen.pcc(df3['class'])
     
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_33_1.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_33_1.png)
 
 
 
@@ -1404,7 +1400,7 @@ gen.pcc(y_resampled)
     
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_40_1.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_40_1.png)
 
 
 Lets check the relationship of each data between after the resampling.
@@ -1417,7 +1413,7 @@ ax.set_title('Correlation Heatmap');
 ```
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_42_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_42_0.png)
 
 
 ### Classification Model
@@ -1655,7 +1651,7 @@ print(classification_report(y_Val, y_pred))
 ```
 
 
-![png](/images/brankruptcy_adaboost/brankruptcy_adaboost_56_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_56_0.png)
 
 
                   precision    recall  f1-score   support
