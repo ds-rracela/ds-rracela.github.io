@@ -1548,7 +1548,7 @@ judasc1.plot_accuracy()
 ```
 
 
-![png](ML_Final_IndivProject_Racela_1_files/ML_Final_IndivProject_Racela_1_47_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_47_0.png)
 
 
 We can see that by using boosting method, the accuracy of decision tree increased from 90% to 95%. Based on the results, we can use GBM for our model. Lets validate it.
@@ -1597,7 +1597,7 @@ print(classification_report(y_Val, y_pred))
 ```
 
 
-![png](ML_Final_IndivProject_Racela_1_files/ML_Final_IndivProject_Racela_1_53_0.png)
+![png](/images/bankruptcy_adaboost/bankruptcy_adaboost_53_0.png)
 
 
                   precision    recall  f1-score   support
